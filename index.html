@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - Control de Gastos.</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <!-- Compiled and minified CSS 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+
+    
+            
+    
+</head>
+<body>
+    <header>
+        <img src="resources/img/Desert.jpg" alt="">
+        <div id="eventhola">
+            <button>Hola</button>
+            Hola
+        </div>
+    </header>
+    <div class="container">
+        <div class="tittle-h2">
+            <h2>Curso FullStack JS</h2>
+            <p>Desde funciones, variables, estructuras de control, input, addEventListener, onclick, InnerText.</p>
+        </div>
+        <div class="btn">
+            <button id="btn" onclick='saludo("Sergio", "Destefano")'>Saludar a Sergio</button>
+            <!--<button id="btn" onclick='saludo("Angel", "Larghi")'>Saludar a Angel</button>
+            <button id="btn" onclick='saludo("Juan", "Pasman")'>Saludar a Juan</button>-->
+        </div>
+        <div id="divSaludo">Hola</div>
+        <hr>
+        <h2 class="tittle-h2">"App de Gastos"</h2>
+        
+        
+        <!--Tabla-->
+                <div class="table">
+                    <table id="transactionTable">
+                        <tr>
+                            <th>
+                                Tipo
+                            </th>
+                            <th>
+                                Descripcion
+                            </th>
+                            <th>
+                                Monto
+                            </th>
+                            <th>
+                                Categoria
+                            </th>
+                            <th>
+                                Eliminar
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+        <!--Fin Tabla-->
+
+        <!--Formulario-->
+            <form id="transactionForm">
+                <div class="formField" data-typeSelector="2">
+                    <label for="ingreso">Ingreso</label>
+                    <input id="ingreso" type="radio" name="typeSelector" value="Ingreso"> <!--checked-->
+                    <label for="egreso">Egreso</label>
+                    <input id="egreso" type="radio" name="typeSelector" value="Egreso">
+                </div>
+                <div class="formField">
+                    <label for="description">Descripcion</label>
+                    <input id="description" type="text" name="description">
+                </div>
+                <div class="formField">
+                    <label for="price">Monto</label>
+                    <input id="price" type="number" name="price">
+                </div>
+                <div class="formField">
+                    <label for="category">Categoria</label>
+                    <select name="category" id="category">
+                    </select>                    
+                </div>
+                <button>Enviar</button>
+            </form>
+        <!--Fin Formulario-->
+
+        <!--Info-->
+        <div class="info">
+            <h2>Prevent Default</h2>
+            <p>¿Que siginifica? Detener o prevenir el comportamiento por defecto del navegador.</p>
+            <br>
+            <h2>Local Storage</h2>
+            <p>localStorage.setItem("salario", "1000") lo guarda en el LS. localStorage.getItem("salario") lo obtiene.</p>
+            <p>Guardarlo en el localStorage</p>
+            <br>
+            <h2>JSON stringify & parse</h2>
+            <p>JSON.strigify() Lo convierte en un string. Sea un array o un objeto. Json.parse() lo vuelve a convertir en lo que era.</p>
+            <br>
+            <h2>data-atributte</h2>
+            <p>data-nombreDeAtributo ="x"</p>
+            <br>
+            <h2>QuerySelector</h2>
+            <p>Metodo para seleccionar todo lo que tiene el DOM o el HTML.
+                document.querySelector(".class")("#id")o document.querySelector('[data-nombreDeAtributo ="x"]') o querySelectorAll.
+            Entre [] podemos seleccionar todos los elementos de HTML.</p>
+            <h2>Metodo filter</h2>
+            <p>Para Eliminar elementos del array que no cumpla con una condicion.</p>
+        </div>
+        <!--Fin Info-->
+
+        <div id="eventchau">
+            <button>Chau</button>
+        </div>
+        <hr><br>
+        <div class="imagenJs" style="margin: 20px;">
+            <p> Imagen insert desde JS</p>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat aliquam cumque perspiciatis culpa inventore, nobis in, voluptates fugiat amet aut autem reprehenderit dolore! Sit adipisci incidunt recusandae dolorum minima accusamus.
+            Dolore facilis natus dolorum maxime rem quidem quisquam, non, vel nesciunt ullam adipisci. Delectus mollitia obcaecati fugiat odio, ratione enim quia debitis doloremque voluptatem provident a itaque unde accusantium quaerat.
+            Obcaecati voluptate facilis neque nisi consectetur ea architecto voluptas distinctio similique ipsa impedit eveniet delectus maiores adipisci hic praesentium vitae inventore nulla accusantium expedita aliquid et recusandae, animi at! Laboriosam.
+            Asperiores eaque numquam amet esse nemo debitis. Delectus et ea veniam maiores expedita in enim veritatis facilis tenetur. Corporis ea minus molestiae nulla ipsum in! Debitis eaque iusto corrupti nemo.
+            Ipsa, quisquam, molestias tempora ratione saepe repellendus quae nam ducimus non, deserunt debitis dolores dolorum exercitationem culpa inventore quidem quibusdam assumenda amet in eum animi neque natus. Iusto, veritatis deserunt!
+            Totam harum commodi illum, eius qui facere molestias quam neque ex quae fugiat eos magni ad omnis mollitia ullam repellendus ratione voluptate dolorum vero quis aut? Dolorum in assumenda dolor.
+            Distinctio voluptate quidem eius dicta perferendis quas tenetur eaque, nam officiis, aliquam doloremque reiciendis? Laudantium non accusamus dignissimos. Ex voluptatem enim cum voluptate pariatur distinctio quod commodi saepe modi perspiciatis.
+            Ipsa quos cumque obcaecati enim alias accusamus voluptas numquam a quas ratione itaque et, eum laborum nam suscipit? Eaque, a vel? Velit voluptatibus distinctio amet, debitis eos voluptatum corrupti quaerat.
+            Harum, id porro! Commodi atque incidunt non. Deserunt quidem nemo dolorem! Soluta, aperiam. Quis distinctio corrupti cumque ratione consequatur alias similique, harum doloremque dolorum rerum, amet impedit asperiores suscipit consequuntur.
+            Ratione in officiis sed exercitationem iure. Perferendis quas ad quam! Excepturi, numquam eius quasi laborum beatae quae, odio quibusdam neque quam inventore sed debitis qui pariatur possimus porro nobis enim.
+            Consequuntur facilis neque doloribus autem veniam assumenda, odit aliquam saepe rem at nostrum sunt reprehenderit, nam nemo architecto non maiores beatae atque exercitationem. Dolore, fugit ducimus itaque illo illum veniam.
+            Delectus eaque eius animi perferendis quas iure, iusto soluta quis error autem velit nemo. Consequuntur, assumenda quam maxime laborum tempore neque quas saepe voluptas impedit doloribus obcaecati ullam porro reprehenderit.
+            Expedita ipsa odio eius. Dolor culpa eius voluptate qui atque nam delectus maiores cumque commodi deleniti molestias inventore pariatur aperiam aspernatur esse nemo, recusandae provident, ducimus voluptatem omnis. Temporibus, id.
+            Suscipit, ipsam minus? Mollitia molestiae, aliquid porro ratione explicabo voluptas ut deserunt impedit nesciunt nam voluptates adipisci atque est ipsa ad eos voluptatem ducimus nostrum perferendis iusto. Ipsum, dignissimos quaerat?
+            Mollitia provident ipsum nemo hic, asperiores odit eaque quod incidunt officiis voluptatibus sunt nobis, obcaecati dicta quia assumenda suscipit magnam facilis temporibus cupiditate aspernatur atque eius aliquam. Quas, nulla quae.
+            Consequatur, deleniti quidem. Debitis dolor laborum ea doloribus ab placeat aliquid deleniti, totam animi delectus vel quos labore inventore? Reiciendis expedita cumque, qui illum hic esse adipisci voluptates quam suscipit.
+            Eius dignissimos quibusdam beatae voluptate repudiandae laboriosam, laborum nostrum consectetur nam modi dolore adipisci dolor mollitia. Magnam culpa nam porro magni voluptates, ea libero harum ex error itaque voluptatum. Ab.
+            Voluptas asperiores totam aliquam delectus voluptatibus enim, saepe alias tempore iure provident officiis corporis eius quas laboriosam culpa! Inventore voluptates laborum expedita dolorum? Vitae, similique facere. Animi corrupti amet repellendus.
+            At ipsam totam magni cum omnis excepturi nihil culpa, delectus, ipsum est asperiores, vel iure consectetur saepe sint eveniet architecto hic doloribus soluta. Commodi, fugiat nihil impedit voluptas est nesciunt.
+            Maiores omnis sapiente necessitatibus molestias quasi, voluptas vitae officiis, qui sit impedit dolorem! Soluta eveniet, expedita quibusdam voluptas cum officia vel, ex, cumque alias et ut nesciunt officiis odit dolor?</p>
+        
+    </div><!--container-->
+    <script src="resources/js/index.js" defer></script>
+    <script src="resources/js/index1.js" defer></script>
+    <script src="resources/js/submit.js" defer></script>
+    <script src="resources/js/index4.js" defer></script>
+    <!-- Compiled and minified JavaScript
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+</body>
+</html>
