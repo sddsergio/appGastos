@@ -105,6 +105,7 @@ function draw_category() {
         insertCategory(allCategories[index])
     }
 }
+
 function insertCategory(categoryName) {
     const selectElement = document.getElementById("category");
     let htmlToInsert = `<option> ${categoryName} </option>`
