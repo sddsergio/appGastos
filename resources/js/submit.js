@@ -11,7 +11,7 @@ transactionForm.addEventListener("submit", function(event){
             transactionForm.reset()
         }
         else{
-            alert("Monto ignresado no es correcto");
+            alert("Monto ignresado no es correcto!");
         }
     })
 
